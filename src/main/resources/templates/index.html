@@ -39,35 +39,74 @@
                                     
                                 }
             
-                                    .btn_btn_primary span {
+                                .btn_btn_primary span {
+                                    cursor: pointer;
+                                    display: inline-block;
+                                    position: relative;
+                                    transition: 0.5s;
+                                }
+        
+                                .btn_btn_primary span:after {
+                                    content: '\00bb';
+                                    position: absolute;
+                                    opacity: 0;
+                                    top: 0;
+                                    right: -20px;
+                                    transition: 0.5s;
+                                }
+        
+                                .btn_btn_primary:hover span {
+                                    padding-right: 25px;
+                                }
+        
+                                .btn_btn_primary:hover span:after {
+                                    opacity: 1;
+                                    right: 0;
+                                }
+                            </style>
+                            
+                            <!-- <div class="d-grid gap-2 d-md-block"></div> -->
+                                <button type="submit" class="btn_btn_primary"><span>Sign in</span></button>
+                                <style>
+                                    .btn_create_account{
+                                        float: right;
+                                        border-radius: 4px;
+                                        background-color: #0F4806;
+                                        border: none;
+                                        color: white;
+                                        text-align: center;
+                                        padding: 20px;
+                                        width: 180px;
+                                        transition: all 0.5s;
+                                        cursor: pointer;
+                                        margin: 5px;
+                                    }
+                                    .btn_create_account span {
                                         cursor: pointer;
                                         display: inline-block;
                                         position: relative;
                                         transition: 0.5s;
                                     }
-            
-                                        .btn_btn_primary span:after {
-                                            content: '\00bb';
-                                            position: absolute;
-                                            opacity: 0;
-                                            top: 0;
-                                            right: -20px;
-                                            transition: 0.5s;
-                                        }
-            
-                                    .btn_btn_primary:hover span {
-                                        padding-right: 25px;
+                                    .btn_create_account span:after {
+                                        content: '\002B';
+                                        position: absolute;
+                                        opacity: 0;
+                                        top: 0;
+                                        left: -20px;
+                                        transition: 0.5s;
                                     }
-            
-                                        .btn_btn_primary:hover span:after {
-                                            opacity: 1;
-                                            right: 0;
-                                        }
-                            </style>
-                            <div class="d-grid gap-2 d-md-block"></div>
-                                <button type="submit" class="btn_btn_primary"><span>Sign in</span></button>
-                                <button href="register.html" type="submit" class="btn_btn_primary"><span>Create account</span></button>
-                            </div>
+                                    .btn_create_account:hover span {
+                                        padding-left: 25px;
+                                    }
+                                    .btn_create_account:hover span:after {
+                                        opacity: 1;
+                                        left: 0;
+                                    }
+                                    
+                                </style>
+                                <button type="createAccount" class="btn_create_account"><i class="fa fa-home"></i><span>Create account</span></button>
+                                <!-- <button href="register.html" type="submit" class="btn_btn_primary"><span>Create account</span></button>
+                            </div> -->
                             <!-- <p>If you don't have account, please create <a href="register.html">here</a>!</p>
                           
                                 <button class="btn btn-primary" type="button">Button</button> -->
