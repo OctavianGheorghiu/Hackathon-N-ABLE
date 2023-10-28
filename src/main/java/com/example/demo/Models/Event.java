@@ -13,7 +13,7 @@ public class Event {
 
     @Id
     @Column(name = "id")
-    private long id;
+    private int id;
     @Column(name = "title")
     private String title;
 
@@ -32,7 +32,7 @@ public class Event {
     public Event() {
     }
 
-    public Event(long id, String title, String description, String location, String date, int points) {
+    public Event(int id, String title, String description, String location, String date, int points) {
         this.id = id;
         this.title = title;
         this.description = description;
@@ -41,11 +41,11 @@ public class Event {
         this.points = points;
     }
 
-    public long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 

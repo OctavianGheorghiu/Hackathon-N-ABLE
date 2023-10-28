@@ -11,18 +11,22 @@ import org.springframework.stereotype.Component;
 public class Person {
 
     @Id
-    @Column(name = "id")
+    //@Column(name = "id")
     private int id;
-    @Column(name = "name")
-    private String name;
+
     @Column(name = "email")
     private String email;
+
     @Column(name = "password")
     private String password;
-    @Column(name = "city")
-    private String city;
+    @Column(name = "name")
+    private String name;
+
     @Column(name = "points")
     private int points;
+    @Column(name = "city")
+    private String city;
+
 
     public Person() {
     }
