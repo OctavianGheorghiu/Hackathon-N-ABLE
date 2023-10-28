@@ -171,6 +171,61 @@
                 document.getElementById("help").style.width = "550px";
             }
         </script>
+        <a id="store" class="storeClass" href="#store"><span onclick="openStore()">Store 🛒</span></a>
+        <style>
+            .topBar {
+                background-color: #808B96;
+                overflow: hidden;
+            }   
+            .topBar a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                font-family: calibri;
+            }
+            .topBar a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+            
+
+        </style>
+        <script>
+            function openStore() {
+                
+            }
+        </script>
+
+        <a id="login" class="loginClass" href="#login"><span onclick="openLogin()">Login</span></a>
+        <style>
+            .topBar {
+                background-color: #808B96;
+                overflow: hidden;
+            }   
+            .topBar a {
+                float: right;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                font-family: calibri;
+            }
+            .topBar a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+            
+
+        </style>
+        <script>
+            function openLogin() {
+                
+            }
+        </script>
 
         <input type="text" placeholder="Search..">
         <style>
@@ -397,3 +452,828 @@
     </div>
 
 </body></html>
+<!-- <!DOCTYPE html>
+<html><head>
+    <title>Store</title>
+</head>
+<body>
+    <div id="myProfile" class="profileSide">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeProfile()">×</a>
+        <a>Aici trebuie poza</a>
+        <a>Nume</a>
+        <a>Oras</a>
+        <a>Puncte</a>
+        <style>
+            .profileSide{
+                height: 100%; 
+                width: 0; 
+                position: fixed; 
+                z-index: 1; 
+                top: 0; 
+                left: 0;
+                background-color: #111; 
+                overflow-x: hidden; 
+                padding-top: 60px; 
+                transition: 0.5s; 
+            }
+            .profileSide a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+                transition: 0.5s;
+            }
+            .profileSide a:hover {
+                color: #f1f1f1;
+            }
+            .profileSide .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
+            }
+            #main {
+                transition: margin-left .5s;
+                padding: 20px;
+            }
+            @media screen and (max-height: 450px) {
+                .profileSide {padding-top: 15px;}
+                .profileSide a {font-size: 18px;}
+            }
+        </style>
+        <script>
+            function closeProfile() {
+                document.getElementById("myProfile").style.width = "0";
+            }
+        </script>
+    </div>
+    <div id="help" class="helpSide">
+        <a href="javascript:void(0)" class="closebtn2" onclick="closeHelp()">×</a>
+        <a>Sectiunea 1</a>
+        <a>Sectiunea 2</a>
+        <a>Sectiunea 3</a>
+        <a>Sectiunea 4</a>
+        <style>
+            .helpSide{
+                height: 100%; 
+                width: 0; 
+                position: fixed; 
+                z-index: 1; 
+                top: 0; 
+                right: 0;
+                background-color: #111; 
+                overflow-x: hidden; 
+                padding-top: 60px; 
+                transition: 0.5s; 
+            }
+            .helpSide a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+                transition: 0.5s;
+            }
+            .helpSide a:hover {
+                color: #f1f1f1;
+            }
+            .helpSide .closebtn2 {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
+            }
+            #main {
+                transition: margin-left .5s;
+                padding: 20px;
+            }
+            @media screen and (max-height: 450px) {
+                .helpSide {padding-top: 15px;}
+                .helpSide a {font-size: 18px;}
+            }
+        </style>
+        <script>
+            function closeHelp() {
+                document.getElementById("help").style.width = "0";
+            }
+        </script>
+    </div>
+    <div id="tBar" class="topBar">
+        <img src="logo 1.jpg" class="logoClass">
+        <style>
+            .topBar .logoClass{
+                float: left;
+                height: 50px;
+                width: 50px;
+            }
+        </style>
+        <a id="prof" class="profile" href="#profile"><span onclick="openProfile()">Profile 👤</span></a>
+        <style>
+            .topBar {
+                background-color: #808B96;
+                overflow: hidden;
+            }   
+            .topBar a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                font-family: calibri;
+            }
+            .topBar a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+            
+
+        </style>
+        <script>
+            function openProfile() {
+                document.getElementById("myProfile").style.width = "550px";
+            }
+        </script>
+
+        <a id="hellp" class="hellpClass" href="#help"><span onclick="openHelp()">Help</span></a>
+        <style>
+            .topBar {
+                background-color: #808B96;
+                overflow: hidden;
+            }   
+            .topBar a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                font-family: calibri;
+            }
+            .topBar a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+            
+
+        </style>
+        <script>
+            function openHelp() {
+                document.getElementById("help").style.width = "550px";
+            }
+        </script>
+        <a id="store" class="storeClass" href="#store"><span onclick="openStore()">Store 🛒</span></a>
+        <style>
+            .topBar {
+                background-color: #808B96;
+                overflow: hidden;
+            }   
+            .topBar a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                font-family: calibri;
+            }
+            .topBar a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+            
+
+        </style>
+        <script>
+            function openStore() {
+                
+            }
+        </script>
+
+        <input type="text" placeholder="Search..">
+        <style>
+            .topBar {
+                overflow: hidden;
+                background-color: #e9e9e9;
+            }
+
+            .topBar a {
+                float: left;
+                display: block;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+            .topBar a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            .topBar a.active {
+                background-color: #2196F3;
+                color: white;
+            }
+
+            .topBar input[type=text] {
+                float: right;
+                padding: 6px;
+                border: none;
+                margin-top: 8px;
+                margin-right: 16px;
+                font-size: 17px;
+                border-radius: 20px;
+            }
+
+            @media screen and (max-width: 600px) {
+                .topBar a, .topBar input[type=text] {
+                    float: none;
+                    display: block;
+                    text-align: left;
+                    width: 100%;
+                    margin: 0;
+                    padding: 14px;
+                }
+                .topBar input[type=text] {
+                    border: 1px solid #ccc;
+                }
+            }
+            .topBar {
+                margin-bottom: 30px;
+            }
+
+        </style>
+        <a id="search" class="searchButton" href="#search"><span>🔍</span></a>
+        <style>
+            .topBar .searchButton{
+                float: right;
+            }
+        </style>
+        
+    </div>
+    <div id="searchStore" ,="" class="searchStoreClass">
+        <b class="textClass">Search for a product</b>
+        <style>
+            .searchStoreClass .textClass {
+                font-family: calibri;
+                margin-right: 20px;
+            }
+        </style>
+        <input type="text" placeholder="Search..">
+        <style>
+            .searchStoreClass {
+                display: flex;
+                align-items: center;
+                background-color: white;
+                justify-content: center; 
+                text-align: center; 
+            }
+            .searchStoreClass {
+                align-items: center;
+                background-color: white;
+            }
+
+            .searchStoreClass a { 
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                
+            }
+
+            .searchStoreClass a:hover {
+                background-color: #ddd;
+                color: black;
+                
+            }
+
+            .searchStoreClass a.active {
+                background-color: #2196F3;
+                color: white;
+                
+            }
+
+            .searchStoreClass input[type=text] {
+                
+                padding: 6px;
+                border: 1px solid #ccc;
+                margin-top: 8px;
+                margin-right: 16px;
+                font-size: 17px;
+                border-radius: 20px;
+                
+            }
+
+            @media screen and (max-width: 600px) {
+                .searchStoreClass a, .searchStoreClass input[type=text] {
+                    float: none;
+                    display: block;
+                    text-align: left;
+                    width: 100%;
+                    margin: 0;
+                    padding: 14px;
+                    
+                }
+                .searchStoreClass input[type=text] {
+                    border: 1px solid #ccc;
+                }
+            }
+
+            .searchStoreClass {
+                margin-bottom: 30px;
+            }
+
+        </style>
+        <a id="searchStoreButton" class="searchButtonStore" href="#search"><span>🔍</span></a>
+        <style>
+            .topBar .searchButtonStore{
+                align-items: center;
+            }
+        </style>
+    </div>
+    <div class="feed" id="feedId" style="align-items: center;">
+        <style>
+            .feed{
+                margin-left: auto;
+                margin-right: auto;
+                height: 300px;
+                width: 700px;
+                background-color: #808B96;
+                border-radius: 20px;
+            }
+        </style>
+        <a id="numeProdus" class="numeProdusClass">Numele produsului</a>
+        <a id="poza" class="pozaClass">poza</a>
+        <a id="pret" class="pretClass">pret</a>
+        <a id="descriereProdus" class="descriereClass">Descrierea produsului</a>
+        <button id="add" class="addClass"><span>Add to cart</span> </button>
+        <style>
+            .feed .pozaClass{
+                font-size: 20px;
+            }
+            .feed a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: black;
+                display: block;
+            }
+            .feed .pretClass{
+                font-size: 14px;
+                margin-left: 24px;
+                margin-right: 24px;
+            }
+            .feed .descriereClass{
+                font-size: 14px;
+                margin-left: 24px;
+                margin-right: 24px;
+            }
+            .feed .addClass {
+                border-radius: 4px;
+                background-color: #0e6600;
+                border: none;
+                color: white;
+                text-align: center;
+                padding: 20px;
+                width: 250px;
+                transition: all 0.5s;
+                cursor: pointer;
+                margin: 5px;     
+                float: right;
+                
+            }
+        
+            .feed .addClass span {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+            }
+        
+            .feed .addClass span:after {
+                content: '\00bb';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: -20px;
+                transition: 0.5s;
+            }
+        
+            .feed .addClass:hover span {
+                padding-right: 25px;
+            }
+        
+            .feed .addClass:hover span:after {
+                opacity: 1;
+                right: 0;
+            }
+            
+        </style>
+    </div>
+
+</body></html>
+<!-- <!DOCTYPE html>
+<html><head>
+    <title>Store</title>
+</head>
+<body>
+    <div id="myProfile" class="profileSide">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeProfile()">×</a>
+        <a>Aici trebuie poza</a>
+        <a>Nume</a>
+        <a>Oras</a>
+        <a>Puncte</a>
+        <style>
+            .profileSide{
+                height: 100%; 
+                width: 0; 
+                position: fixed; 
+                z-index: 1; 
+                top: 0; 
+                left: 0;
+                background-color: #111; 
+                overflow-x: hidden; 
+                padding-top: 60px; 
+                transition: 0.5s; 
+            }
+            .profileSide a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+                transition: 0.5s;
+            }
+            .profileSide a:hover {
+                color: #f1f1f1;
+            }
+            .profileSide .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
+            }
+            #main {
+                transition: margin-left .5s;
+                padding: 20px;
+            }
+            @media screen and (max-height: 450px) {
+                .profileSide {padding-top: 15px;}
+                .profileSide a {font-size: 18px;}
+            }
+        </style>
+        <script>
+            function closeProfile() {
+                document.getElementById("myProfile").style.width = "0";
+            }
+        </script>
+    </div>
+    <div id="help" class="helpSide">
+        <a href="javascript:void(0)" class="closebtn2" onclick="closeHelp()">×</a>
+        <a>Sectiunea 1</a>
+        <a>Sectiunea 2</a>
+        <a>Sectiunea 3</a>
+        <a>Sectiunea 4</a>
+        <style>
+            .helpSide{
+                height: 100%; 
+                width: 0; 
+                position: fixed; 
+                z-index: 1; 
+                top: 0; 
+                right: 0;
+                background-color: #111; 
+                overflow-x: hidden; 
+                padding-top: 60px; 
+                transition: 0.5s; 
+            }
+            .helpSide a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+                transition: 0.5s;
+            }
+            .helpSide a:hover {
+                color: #f1f1f1;
+            }
+            .helpSide .closebtn2 {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
+            }
+            #main {
+                transition: margin-left .5s;
+                padding: 20px;
+            }
+            @media screen and (max-height: 450px) {
+                .helpSide {padding-top: 15px;}
+                .helpSide a {font-size: 18px;}
+            }
+        </style>
+        <script>
+            function closeHelp() {
+                document.getElementById("help").style.width = "0";
+            }
+        </script>
+    </div>
+    <div id="tBar" class="topBar">
+        <img src="logo 1.jpg" class="logoClass">
+        <style>
+            .topBar .logoClass{
+                float: left;
+                height: 50px;
+                width: 50px;
+            }
+        </style>
+        <a id="prof" class="profile" href="#profile"><span onclick="openProfile()">Profile 👤</span></a>
+        <style>
+            .topBar {
+                background-color: #808B96;
+                overflow: hidden;
+            }   
+            .topBar a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                font-family: calibri;
+            }
+            .topBar a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+            
+
+        </style>
+        <script>
+            function openProfile() {
+                document.getElementById("myProfile").style.width = "550px";
+            }
+        </script>
+
+        <a id="hellp" class="hellpClass" href="#help"><span onclick="openHelp()">Help</span></a>
+        <style>
+            .topBar {
+                background-color: #808B96;
+                overflow: hidden;
+            }   
+            .topBar a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                font-family: calibri;
+            }
+            .topBar a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+            
+
+        </style>
+        <script>
+            function openHelp() {
+                document.getElementById("help").style.width = "550px";
+            }
+        </script>
+
+        <input type="text" placeholder="Search..">
+        <style>
+            .topBar {
+                overflow: hidden;
+                background-color: #e9e9e9;
+            }
+
+            .topBar a {
+                float: left;
+                display: block;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+            .topBar a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            .topBar a.active {
+                background-color: #2196F3;
+                color: white;
+            }
+
+            .topBar input[type=text] {
+                float: right;
+                padding: 6px;
+                border: none;
+                margin-top: 8px;
+                margin-right: 16px;
+                font-size: 17px;
+                border-radius: 20px;
+            }
+
+            @media screen and (max-width: 600px) {
+                .topBar a, .topBar input[type=text] {
+                    float: none;
+                    display: block;
+                    text-align: left;
+                    width: 100%;
+                    margin: 0;
+                    padding: 14px;
+                }
+                .topBar input[type=text] {
+                    border: 1px solid #ccc;
+                }
+            }
+            .topBar {
+                margin-bottom: 30px;
+            }
+
+        </style>
+        <a id="search" class="searchButton" href="#search"><span>🔍</span></a>
+        <style>
+            .topBar .searchButton{
+                float: right;
+            }
+        </style>
+        
+    </div>
+    <div id="searchStore" ,="" class="searchStoreClass">
+        <b class="textClass">Search for a product</b>
+        <style>
+            .searchStoreClass .textClass {
+                font-family: calibri;
+                margin-right: 20px;
+            }
+        </style>
+        <input type="text" placeholder="Search..">
+        <style>
+            .searchStoreClass {
+                display: flex;
+                align-items: center;
+                background-color: white;
+                justify-content: center; 
+                text-align: center; 
+            }
+            .searchStoreClass {
+                align-items: center;
+                background-color: white;
+            }
+
+            .searchStoreClass a { 
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                
+            }
+
+            .searchStoreClass a:hover {
+                background-color: #ddd;
+                color: black;
+                
+            }
+
+            .searchStoreClass a.active {
+                background-color: #2196F3;
+                color: white;
+                
+            }
+
+            .searchStoreClass input[type=text] {
+                
+                padding: 6px;
+                border: 1px solid #ccc;
+                margin-top: 8px;
+                margin-right: 16px;
+                font-size: 17px;
+                border-radius: 20px;
+                
+            }
+
+            @media screen and (max-width: 600px) {
+                .searchStoreClass a, .searchStoreClass input[type=text] {
+                    float: none;
+                    display: block;
+                    text-align: left;
+                    width: 100%;
+                    margin: 0;
+                    padding: 14px;
+                    
+                }
+                .searchStoreClass input[type=text] {
+                    border: 1px solid #ccc;
+                }
+            }
+
+            .searchStoreClass {
+                margin-bottom: 30px;
+            }
+
+        </style>
+        <a id="searchStoreButton" class="searchButtonStore" href="#search"><span>🔍</span></a>
+        <style>
+            .topBar .searchButtonStore{
+                align-items: center;
+            }
+        </style>
+    </div>
+    <div class="feed" id="feedId" style="align-items: center;">
+        <style>
+            .feed{
+                margin-left: auto;
+                margin-right: auto;
+                height: 300px;
+                width: 700px;
+                background-color: #808B96;
+                border-radius: 20px;
+            }
+        </style>
+        <a id="numeProdus" class="numeProdusClass">Numele produsului</a>
+        <a id="poza" class="pozaClass">poza</a>
+        <a id="pret" class="pretClass">pret</a>
+        <a id="descriereProdus" class="descriereClass">Descrierea produsului</a>
+        <button id="add" class="addClass"><span>Add to cart</span> </button>
+        <style>
+            .feed .pozaClass{
+                font-size: 20px;
+            }
+            .feed a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: black;
+                display: block;
+            }
+            .feed .pretClass{
+                font-size: 14px;
+                margin-left: 24px;
+                margin-right: 24px;
+            }
+            .feed .descriereClass{
+                font-size: 14px;
+                margin-left: 24px;
+                margin-right: 24px;
+            }
+            .feed .addClass {
+                border-radius: 4px;
+                background-color: #0e6600;
+                border: none;
+                color: white;
+                text-align: center;
+                padding: 20px;
+                width: 250px;
+                transition: all 0.5s;
+                cursor: pointer;
+                margin: 5px;     
+                float: right;
+                
+            }
+        
+            .feed .addClass span {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+            }
+        
+            .feed .addClass span:after {
+                content: '\00bb';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: -20px;
+                transition: 0.5s;
+            }
+        
+            .feed .addClass:hover span {
+                padding-right: 25px;
+            }
+        
+            .feed .addClass:hover span:after {
+                opacity: 1;
+                right: 0;
+            }
+            
+        </style>
+    </div>
+
+</body></html> --> -->
