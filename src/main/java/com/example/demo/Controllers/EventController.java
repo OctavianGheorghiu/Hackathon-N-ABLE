@@ -1,3 +1,4 @@
+/*
 package com.example.demo.Controllers;
 
 import com.example.demo.Models.Event;
@@ -89,3 +90,4 @@ public class EventController {
         return "redirect:/events";
     }
 }
+*/

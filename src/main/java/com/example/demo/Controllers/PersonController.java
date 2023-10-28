@@ -1,3 +1,4 @@
+
 package com.example.demo.Controllers;
 
 import com.example.demo.Models.Person;
@@ -7,8 +8,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @Controller
 @RequestMapping("/persons")
+@CrossOrigin
 public class PersonController {
     private final PersonRepository personRepository;
 
@@ -17,7 +21,13 @@ public class PersonController {
         this.personRepository = personRepository;
     }
 
-    @GetMapping
+    @GetMapping("/find_all")
+    public List<Person> findAll(){
+        return personRepository.findAll();
+    }
+
+
+/*    @GetMapping
     public String listPersons(Model model) {
         Iterable<Person> persons = personRepository.findAll();
         model.addAttribute("persons", persons);
@@ -33,8 +43,10 @@ public class PersonController {
         } else {
             return "person/not_found";
         }
-    }
+    }*//*
 
+*/
+/*
     @GetMapping("/create")
     public String createPersonForm() {
         return "person/create";
@@ -77,5 +89,7 @@ public class PersonController {
     public String deletePerson(@PathVariable("id") Long id) {
         personRepository.deleteById(id);
         return "redirect:/persons";
-    }
+    }*/
+
 }
+

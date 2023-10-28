@@ -1,19 +1,18 @@
 package com.example.demo.Models;
 
 import com.fasterxml.jackson.annotation.JsonTypeId;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
 @Component
+@Entity
 @Table(name = "person")
 public class Person {
 
     @Id
-    private long id;
+    @Column(name = "id")
+    private int id;
     @Column(name = "name")
     private String name;
     @Column(name = "email")
@@ -28,7 +27,7 @@ public class Person {
     public Person() {
     }
 
-    public Person(long id, String name, String email, String password, String city, int points) {
+    public Person(int id, String name, String email, String password, String city, int points) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -37,11 +36,11 @@ public class Person {
         this.points = points;
     }
 
-    public long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
