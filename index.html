@@ -24,7 +24,47 @@
                                 <input type="password" class="form-control" id="password" placeholder="Password" th:field="*{password}" required>
                             </div>
                             <br>
-                            <button type="submit" class="btn btn-primary" onclick="verifyLoginData()">Sign in</button>
+                            <style>
+                                .btn_btn_primary {
+                                    border-radius: 4px;
+                                    background-color: #0F4806;
+                                    border: none;
+                                    color: white;
+                                    text-align: center;
+                                    padding: 20px;
+                                    width: 150px;
+                                    transition: all 0.5s;
+                                    cursor: pointer;
+                                    margin: 5px;
+                                    
+                                }
+            
+                                    .btn_btn_primary span {
+                                        cursor: pointer;
+                                        display: inline-block;
+                                        position: relative;
+                                        transition: 0.5s;
+                                    }
+            
+                                        .btn_btn_primary span:after {
+                                            content: '\00bb';
+                                            position: absolute;
+                                            opacity: 0;
+                                            top: 0;
+                                            right: -20px;
+                                            transition: 0.5s;
+                                        }
+            
+                                    .btn_btn_primary:hover span {
+                                        padding-right: 25px;
+                                    }
+            
+                                        .btn_btn_primary:hover span:after {
+                                            opacity: 1;
+                                            right: 0;
+                                        }
+                            </style>
+                            <button type="submit" class="btn_btn_primary" onclick="verifyLoginData()"><span>Sign in</span></button>
                             <p>If you don't have account, ple<a></a></p>
                         </form>
                     </div>
